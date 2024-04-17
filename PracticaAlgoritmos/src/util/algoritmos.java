@@ -33,5 +33,19 @@ public abstract class algoritmos {
 				}
 				return resultado;
 	}
+	/**
+	 * Devuelve un boolean segun si el numero es primo o no
+	 * @param numero numero a comprobar
+	 * @return
+	 */
+	public static boolean esPrimo(int numero) {
+		boolean esPrimo=true;
+		for(int a=numero-1;a>1;a--) {
+			if(numero%a==0) {
+				esPrimo=false;
+			}
+		}	
+		return esPrimo;
+	}
 
 }

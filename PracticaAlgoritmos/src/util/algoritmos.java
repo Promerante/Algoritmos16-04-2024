@@ -7,18 +7,31 @@ package util;
  */
 public abstract class algoritmos {
 	/**
-	 * 
-	 * @param limite
-	 * @return
+	 * Fibonacci series
+	 * @param limite indice del que obtener su valor en la serie 
+	 * @return valor en la serie
 	 */
-	public static int fibonacci(int limite) {		
+	public static int fibonacci(int indice) {		
 		int fibonacci=0,temp=1,aux=0;
-		for(int a=1;a<=limite-2;a++) {
-			fibonacci=temp+aux;
-			aux=temp;
-			temp=fibonacci;				
+		for(int a=1;a<indice;a++) {
+			aux=fibonacci+temp;
+			fibonacci=temp;
+			temp=aux;				
 		}
 		return fibonacci;
+	}
+	/**
+	 * Realiza el factorial  de dicho número
+	 * @param numero
+	 * @return
+	 */
+	
+	public static int factorial(int numero) {
+				int resultado=1;
+				for(int factorial=numero;factorial>0;factorial--) {
+					resultado*=factorial;			
+				}
+				return resultado;
 	}
 
 }

@@ -15,6 +15,5 @@ public class main {
 			resultadoFactorial[a]=algoritmos.factorial(numeros[a]);
 			resultadoPrimos[a]=algoritmos.esPrimo(numeros[a]);					
 		}
-				rn.getClass();//Es para obtener todos los valores en el depurador antes de que termine el programa.
 	}
 }

@@ -10,7 +10,7 @@ public class main {
 		int[] numeros=new int[5],resultadoFibonacci=new int[5],resultadoFactorial=new int[5];
 		boolean[] resultadoPrimos=new boolean[5];
 		for(int a=0;a<numeros.length;a++) {
-			numeros[a]=rn.nextInt(1,10);
+			numeros[a]=rn.nextInt(1,11);
 			resultadoFibonacci[a]=algoritmos.fibonacci(numeros[a]);
 			resultadoFactorial[a]=algoritmos.factorial(numeros[a]);
 			resultadoPrimos[a]=algoritmos.esPrimo(numeros[a]);					

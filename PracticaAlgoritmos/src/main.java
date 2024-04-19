@@ -15,5 +15,7 @@ public class main {
 			resultadoFactorial[a]=algoritmos.factorial(numeros[a]);
 			resultadoPrimos[a]=algoritmos.esPrimo(numeros[a]);					
 		}
+		
+		
 	}
 }

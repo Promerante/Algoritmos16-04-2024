@@ -1,14 +1,14 @@
-package Test;
+package tests;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import org.junit.Test;
+
+import org.junit.jupiter.api.Test;
+
 
 import util.algoritmos;
 
-class Prueba {
-
-	
+class Prueba {	
 	@Test
 	void fibonacci() {
 		int valorDeseado=2;
@@ -21,11 +21,10 @@ class Prueba {
 		int resultado=algoritmos.factorial(3);
 		assertEquals(valorDeseado,resultado);
 	}
+	@Test
 	void esPrimo() {
 		boolean prueba= true;
 		boolean resultado=algoritmos.esPrimo(2);
 		assertEquals(prueba,resultado);
 	}
-	
-
 }
